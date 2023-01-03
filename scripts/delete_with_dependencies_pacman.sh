@@ -1,0 +1,1 @@
+pacman -Rcns $1

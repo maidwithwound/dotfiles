@@ -1,0 +1,6 @@
+choice=$(echo "wayland gnome\nxorg gnome\ndwm" | percol)
+case $choice in
+  "wayland gnome") ~/scripts/gnome-wayland.sh;;
+  "xorg gnome") sxo;;
+  "dwm") sx sh ~/.config/X11/xinitrc.dwm;;
+esac
