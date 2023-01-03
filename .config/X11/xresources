@@ -1,0 +1,187 @@
+*.font: Cozette:size=11
+
+! dwm
+dwm.normbgcolor: #1e1e2e
+dwm.normbordercolor: #988ba2
+dwm.normfgcolor: #c6c6b9
+dwm.selbgcolor: #ddb6f2
+dwm.selfgcolor: #302d41;
+
+! catppuccin
+*background: #1E1E2E
+*foreground: #D9E0EE
+
+! Gray
+*color0: #6E6C7E
+*color8: #988BA2
+
+! Red
+*color1: #F28FAD
+*color9: #F28FAD
+
+! Green
+*color2: #ABE9B3
+*color10: #ABE9B3
+
+! Yellow
+*color3: #FAE3B0
+*color11:  #FAE3B0
+
+! Blue
+*color4: #96CDFB
+*color12: #96CDFB
+
+! Maguve
+*color5: #DDB6F2
+*color13: #DDB6F2
+
+! Pink
+*color6: #F5C2E7
+*color14: #F5C2E7
+
+! Whites
+*color7: #C3BAC6
+*color15: #D9E0EE
+
+! Mountain Xresources palette
+! *.foreground: #f0f0f0
+! *.background: #0f0f0f
+! *.color0:     #262626
+! *.color8:     #4c4c4c
+! *.color1:     #ac8a8c
+! *.color9:     #c49ea0
+! *.color2:     #8aac8b
+! *.color10:    #9ec49f
+! *.color3:     #aca98a
+! *.color11:    #c4c19e
+! *.color4:     #8f8aac
+! *.color12:    #a39ec4
+! *.color5:     #ac8aac
+! *.color13:    #c49ec4
+! *.color6:     #8aabac
+! *.color14:    #9ec3c4
+! *.color7:     #e7e7e7
+! *.color15:    #f5f5f5
+
+! #include ".Xres_color"
+
+!! brogrammer
+!! *.foreground:  #d6dbe5
+!! *.background:  #131313
+!! *.color0:      #1f1f1f
+!! *.color8:      #d6dbe5
+!! *.color1:      #f81118
+!! *.color9:      #de352e
+!! *.color2:      #2dc55e
+!! *.color10:     #1dd361
+!! *.color3:      #ecba0f
+!! *.color11:     #f3bd09
+!! *.color4:      #2a84d2
+!! *.color12:     #1081d6
+!! *.color5:      #4e5ab7
+!! *.color13:     #5350b9
+!! *.color6:      #1081d6
+!! *.color14:     #0f7ddb
+!! *.color7:      #d6dbe5
+!! *.color15:     #ffffff
+!! *.colorBD:     #d6dbe5
+
+!! solarized
+!! *.background: #282828
+!! *.foreground: white
+!! *.cursorColor: white
+!! *.color0:#073642
+!! *.color1:#dc322f
+!! *.color2:#859900
+!! *.color3:#b58900
+!! *.color4:#268bd2
+!! *.color5:#d33682
+!! *.color6:#2aa198
+!! *.color7:#eee8d5
+!! *.color9:#cb4b16
+!! *.color8:#fdf6e3
+!! *.color10:#586e75
+!! *.color11:#657b83
+!! *.color12:#839496
+!! *.color13:#6c71c4
+!! *.color14:#93a1a1
+!! *.color15:#fdf6e3
+
+!! relax
+!! *.foreground:  #d8d9d9
+!! *.background:  #353a44
+!! *.color0:      #151515
+!! *.color8:      #636363
+!! *.color1:      #bc5653
+!! *.color9:      #bc5653
+!! *.color2:      #909d63
+!! *.color10:     #a0ac77
+!! *.color3:      #ebc17a
+!! *.color11:     #ebc17a
+!! *.color4:      #6a8799
+!! *.color12:     #7eaac7
+!! *.color5:      #b06698
+!! *.color13:     #b06698
+!! *.color6:      #c9dfff
+!! *.color14:     #acbbd0
+!! *.color7:      #d9d9d9
+!! *.color15:     #f7f7f7
+
+!! Perun
+! special
+/* *.foreground:   #c6c6b9 */
+/* *.background:   #262626 */
+/* *.cursorColor:  #f0e68c */
+
+/* ! black */
+/* *.color0:       #262626 */
+/* *.color8:       #262626 */
+
+/* ! red */
+/* *.color1:       #cd5c5c */
+/* *.color9:       #cd5c5c */
+
+/* ! green */
+/* *.color2:       #999900 */
+/* *.color10:      #999900 */
+
+/* ! yellow */
+/* *.color3:       #ed8e5e */
+/* *.color11:      #ed8e5e */
+
+/* ! blue */
+/* *.color4:       #248f8f */
+/* *.color12:      #248f8f */
+
+/* ! magenta */
+/* *.color5:       #c9acd2 */
+/* *.color13:      #c9acd2 */
+
+/* ! cyan */
+/* *.color6:       #248f8f */
+/* *.color14:      #248f8f */
+
+/* ! white */
+/* *.color7:       #c6c6b9 */
+/* *.color15:      #c6c6b9 */
+
+! *.foreground:   #bccae2
+! *.background:   #24262b
+! *.cursorColor:  #bccae2
+! *.color0:       #24262b
+! *.color8:       #3a3d45
+! *.color1:       #843c56
+! *.color9:       #ab4e70
+! *.color2:       #83a86f
+! *.color10:      #a3d18a
+! *.color3:       #a87458
+! *.color11:      #d3926f
+! *.color4:       #4a6aa3
+! *.color12:      #6b8bc3
+! *.color5:       #66518a
+! *.color13:      #9375c7
+! *.color6:       #4aa36a
+! *.color14:      #5dcc85
+! *.color7:       #bccae2
+! *.color15:      #dce9ff
+! 

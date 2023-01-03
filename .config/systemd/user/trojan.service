@@ -1,0 +1,9 @@
+[Unit]
+Description=trojan
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/trojan-go --config /etc/trojan-go/client.json
+
+[Install]
+WantedBy=default.target

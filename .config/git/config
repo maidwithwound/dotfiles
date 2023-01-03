@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = whtntr
+email = jarikus111222333@gmail.com
+[credential]
+	helper = store

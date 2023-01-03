@@ -1,0 +1,21 @@
+[Shortcuts]
+KisToolSelectContiguous=W
+KisToolSelectOutline=L
+KisToolSelectRectangular=M
+KritaShape/KisToolMultiBrush=none
+ZoomTool=Z
+add_new_paint_layer=Ins; Ctrl+Shift+N
+chooseForegroundColor=7
+file_export_file=Ctrl+Alt+S
+make_brush_color_lighter=none
+mirrorImageHorizontal=/
+mirror_canvas=none
+move_layer_down=Shift+PgDown
+move_layer_up=Shift+PgUp
+paste_new=none
+previous_favorite_preset=none
+previous_preset=Q
+reset_canvas_rotation=Ctrl+R
+save_incremental_version=none
+show_tool_options=none
+toggle_layer_visibility=\\

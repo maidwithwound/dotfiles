@@ -1,0 +1,5 @@
+~/scripts/autorun.sh &
+~/abobas/slstatus/slstatus &
+while :; do
+  ssh-agent ~/abobas/dwm/dwm
+done

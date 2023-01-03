@@ -1,0 +1,25 @@
+copypath - copy cwd into clipboard
+copypath <file> copy absolute path to selected file
+copyfile <file> copy content of the file to clipboard
+
+pj <folder listed in ~/prj> - jump to project
+pjo <folder> opens folder in $EDITOR
+
+type some things and ctrl+jk scroll through history
+
+mkcd <directory> create and change to directory
+md - create directory
+rd - rmdir
+.. - cd ..
+... cd ../..
+.... cd ../../..
+..... cd ../../../..
+d - dirs -v (last visited directories)
+1-9 - cd -[1-9]
+
+killall firefox
+
+zin - sudo zypper install 
+zrm - sudo zypper rm
+zdup - sudo zypper dup # upgrade packages
+zse - sudo zypper search
