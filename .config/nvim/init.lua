@@ -1,46 +1,45 @@
-require "paq" {
-  "savq/paq-nvim";
+-- vim.cmd [[packadd packer.nvim]]
 
-  -- ui
-  -- 'morhetz/gruvbox';
-  'shaunsingh/nord.nvim';
-
-  -- coding specefic
-  -- {"neoclide/coc.nvim", branch="release"};
-  'preservim/nerdtree';
-  'preservim/tagbar';
-  'mfussenegger/nvim-dap';
-  'rcarriga/nvim-dap-ui';
-  'neovim/nvim-lspconfig'; -- nvim-cmp {{{
-  'hrsh7th/cmp-vsnip'; -- snippet completion
-  'hrsh7th/vim-vsnip'; -- snippet engine
-  'hrsh7th/cmp-nvim-lsp'; -- lsp completion
-  'hrsh7th/cmp-buffer'; -- buffer completion {{{
-  'hrsh7th/cmp-path'; -- }}}
-  'hrsh7th/cmp-cmdline';
-  'simrat39/rust-tools.nvim'; -- rust completion (over rust-analyzer)
-  'hrsh7th/nvim-cmp'; 
-  'mattn/emmet-vim'; -- }}}
-
-  -- ui
-  'kyazdani42/nvim-web-devicons';
-  'akinsho/bufferline.nvim';
-
-  -- tools
-  {'phaazon/hop.nvim', run=require'hop'.setup()};
-  'nvim-lua/popup.nvim'; -- i dunno what these two plugin does
-  'nvim-lua/plenary.nvim';
-  'nvim-telescope/telescope.nvim'; -- modern fuzzy analog
-  'hood/popui.nvim';
-  -- {'nvim-treesitter/nvim-treesitter', run=vim.cmd ':TSUpdate'};
-
-  -- syntax
-  'axvr/org.vim';
-  'bfrg/vim-cpp-modern';
-  'sheerun/vim-polyglot';
-  'frazrepo/vim-rainbow';
-}
-
+-- require('packer').startup(function(use)
+--   -- ui
+--   use 'morhetz/gruvbox'
+--   -- 'shaunsingh/nord.nvim'
+-- 
+--   -- coding specefic
+--   -- {"neoclide/coc.nvim", branch="release"}
+--   use 'preservim/nerdtree'
+--   use 'preservim/tagbar'
+--   use 'mfussenegger/nvim-dap'
+--   use 'rcarriga/nvim-dap-ui'
+--   use 'neovim/nvim-lspconfig' -- nvim-cmp {{{
+--   use 'hrsh7th/cmp-nvim-lsp' -- lsp completion
+--   use 'hrsh7th/cmp-buffer' -- buffer completion {{{
+--   use 'hrsh7th/cmp-path' -- }}}
+--   use 'hrsh7th/cmp-cmdline'
+--   use 'simrat39/rust-tools.nvim' -- rust completion (over rust-analyzer)
+--   use 'hrsh7th/nvim-cmp' 
+--   use 'mattn/emmet-vim' -- }}}
+-- 
+--   -- ui
+--   use 'kyazdani42/nvim-web-devicons'
+--   use 'akinsho/bufferline.nvim'
+-- 
+--   -- tools
+--   use { 'phaazon/hop.nvim', run=function() require'hop'.setup() end }
+--   use 'nvim-lua/popup.nvim' -- i dunno what these two plugin does
+--   use 'nvim-lua/plenary.nvim'
+--   use 'nvim-telescope/telescope.nvim' -- modern fuzzy analog
+--   use 'hood/popui.nvim'
+--   -- {'nvim-treesitter/nvim-treesitter', run=vim.cmd ':TSUpdate'}
+-- 
+--   -- syntax
+--   use 'axvr/org.vim'
+--   use 'bfrg/vim-cpp-modern'
+--   use 'sheerun/vim-polyglot'
+--   use 'frazrepo/vim-rainbow'
+-- end)
+ 
+require("plugins")
 require("sets") -- sets
 require("maps") -- keybinds?
 require("plugins.nvimdap")

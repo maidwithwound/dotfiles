@@ -38,7 +38,7 @@ COMPLETION_WAITING_DOTS="true"      # print colored dots while waiting for compl
 # plugins
 ## note, zsh-syntax-highlighting must be last plugins sourced
 plugins=(git rust compleat copypath copyfile pj suse zsh-syntax-highlighting history-substring-search)
-export PROJECT_PATHS=(~/prj ~/prj/cpp ~/prj/dotnet ~/abobas ~/.config)
+export PROJECT_PATHS=(~/prj ~/prj/cpp ~/prj/dotnet ~/prj/python ~/abobas ~/.config)
 
 source $ZSH/oh-my-zsh.sh
 
