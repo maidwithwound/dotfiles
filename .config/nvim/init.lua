@@ -1,54 +1,39 @@
--- vim.cmd [[packadd packer.nvim]]
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
+vim.g.mapleader = " "
 
--- require('packer').startup(function(use)
---   -- ui
---   use 'morhetz/gruvbox'
---   -- 'shaunsingh/nord.nvim'
--- 
---   -- coding specefic
---   -- {"neoclide/coc.nvim", branch="release"}
---   use 'preservim/nerdtree'
---   use 'preservim/tagbar'
---   use 'mfussenegger/nvim-dap'
---   use 'rcarriga/nvim-dap-ui'
---   use 'neovim/nvim-lspconfig' -- nvim-cmp {{{
---   use 'hrsh7th/cmp-nvim-lsp' -- lsp completion
---   use 'hrsh7th/cmp-buffer' -- buffer completion {{{
---   use 'hrsh7th/cmp-path' -- }}}
---   use 'hrsh7th/cmp-cmdline'
---   use 'simrat39/rust-tools.nvim' -- rust completion (over rust-analyzer)
---   use 'hrsh7th/nvim-cmp' 
---   use 'mattn/emmet-vim' -- }}}
--- 
---   -- ui
---   use 'kyazdani42/nvim-web-devicons'
---   use 'akinsho/bufferline.nvim'
--- 
---   -- tools
---   use { 'phaazon/hop.nvim', run=function() require'hop'.setup() end }
---   use 'nvim-lua/popup.nvim' -- i dunno what these two plugin does
---   use 'nvim-lua/plenary.nvim'
---   use 'nvim-telescope/telescope.nvim' -- modern fuzzy analog
---   use 'hood/popui.nvim'
---   -- {'nvim-treesitter/nvim-treesitter', run=vim.cmd ':TSUpdate'}
--- 
---   -- syntax
---   use 'axvr/org.vim'
---   use 'bfrg/vim-cpp-modern'
---   use 'sheerun/vim-polyglot'
---   use 'frazrepo/vim-rainbow'
--- end)
- 
-require("plugins")
-require("sets") -- sets
-require("maps") -- keybinds?
-require("plugins.nvimdap")
-require("plugins.nvim-cmp.nvimcmp")
-require("plugins.nerdtree")
-require("plugins.bufferline")
-require("plugins.emmet")
-vim.cmd 'source ~/.config/nvim/themes.vim'
+-- bootstrap lazy and all plugins
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
--- plugin settings
--- vim.cmd 'source ~/.config/nvim//cocnvim.vim'
--- vim.cmd 'source ~/.config/nvim//nerdtree.vim'
+if not vim.loop.fs_stat(lazypath) then
+  local repo = "https://github.com/folke/lazy.nvim.git"
+  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
+end
+
+vim.opt.rtp:prepend(lazypath)
+
+local lazy_config = require "configs.lazy"
+
+-- load plugins
+require("lazy").setup({
+  {
+    "NvChad/NvChad",
+    lazy = false,
+    branch = "v2.5",
+    import = "nvchad.plugins",
+    config = function()
+      require "options"
+    end,
+  },
+
+  { import = "plugins" },
+}, lazy_config)
+
+-- load theme
+dofile(vim.g.base46_cache .. "defaults")
+dofile(vim.g.base46_cache .. "statusline")
+
+require "nvchad.autocmds"
+
+vim.schedule(function()
+  require "mappings"
+end)
