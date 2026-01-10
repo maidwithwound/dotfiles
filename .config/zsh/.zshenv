@@ -1,5 +1,3 @@
-export HOME="/home/sonya"
-
 source ~/.config/user-dirs.dirs
 
 export XINITRC="$HOME/.config/X11/xinitrc"
