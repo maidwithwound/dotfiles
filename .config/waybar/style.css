@@ -345,6 +345,15 @@ tooltip label {
  * RIGHT MODULES - CONNECTIVITY
  * ═══════════════════════════════════════════════════════════════════ */
 
+#bluetooth {
+    padding: 0px 10px;
+    color: @accent-primary;
+    background: rgba(137, 180, 250, 0.15);
+    border-radius: 8px;
+    margin: 2px 1px;
+    border: 2px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
 #pulseaudio {
     padding: 0px 10px;
     color: @accent-pink;
